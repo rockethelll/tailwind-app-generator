@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,12 +10,13 @@
 </head>
 
 <body class="h-full">
-  <div id="app"></div>
+  <iframe id="generated-code" class="w-full h-full" title="preview" ></iframe>
   <div class="absolute bottom-1 left-0 right-0 flex items-center justify-center">
-    <form class="flex items-center justify-center max-w-md bg-gray-300 p-2 w-full gap-2 rounded shadow-md" id="generate-form">
-      <textarea type="text" id="first_name"
+    <form class="flex items-center justify-center max-w-md bg-gray-300 p-2 w-full gap-2 rounded shadow-md"
+      id="generate-form">
+      <textarea type="text" id="prompt" name="prompt"
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-        placeholder="John" required>
+        placeholder="A beautiful landing page" required>
     </textarea>
 
       <button type="submit"
